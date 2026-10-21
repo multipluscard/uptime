@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Configurações · Status Multiplus Card</title>
+    <meta name="description" content="Preferências de exibição da página de status, salvas neste navegador.">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="faixa-marca">
+        <div class="topo">
+            <a href="index.html"><img class="logo" src="assets/img/logo-negativa.png" alt="Multiplus Card — voltar ao status"></a>
+            <span class="nome">Configurações</span>
+            <div class="direita">
+                <a class="botao" href="index.html">Ver o status</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="config">
+        <h1>Configurações</h1>
+        <p class="sub">Ajuste como a página de status aparece para você. As escolhas ficam salvas só neste navegador e valem na hora, inclusive numa aba do status que já esteja aberta.</p>
+        <form id="formulario" novalidate></form>
+        <div class="rodape">
+            <a class="botao botao-primario" href="index.html">Ver o status</a>
+            <button class="botao" type="button" id="restaurar">Restaurar o padrão</button>
+            <span class="salvo" id="salvo" role="status" aria-live="polite"></span>
+        </div>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="comum.js"></script>
+    <script src="configuracao.js"></script>
+</body>
+</html>

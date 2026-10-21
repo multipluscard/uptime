@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Status Multiplus Card</title>
+    <meta name="description" content="Situação das redes de captura atendidas pela Multiplus Card.">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header class="faixa-marca">
+        <div class="topo">
+            <img class="logo" src="assets/img/logo-negativa.png" alt="Multiplus Card">
+            <span class="nome">Status das redes</span>
+            <div class="direita">
+                <span class="atualizacao" id="atualizacao" aria-live="polite"></span>
+                <button class="botao botao-icone" data-atualizar-botao aria-label="Atualizar agora" title="Atualizar agora"></button>
+                <button class="botao botao-icone" data-tema-botao></button>
+                <a class="botao botao-icone" href="configuracao.html" data-config-botao aria-label="Configurações" title="Configurações"></a>
+                <button class="botao" data-ajuda-botao></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="aviso"></div>
+        <div id="vista"></div>
+    </main>
+
+    <footer>Verificação a cada 2 minutos a partir das transações processadas pela Multiplus Card.</footer>
+
+    <script src="config.js"></script>
+    <script src="comum.js"></script>
+    <script src="vistas.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
